@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url("https://www.suhwooree.com/fonts/Cafe24SsurroundAir.ttf");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/bg_0.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-family: "Cafe24 Ssurround Air", "Noto Sans KR", "Malgun Gothic",
+    "Bebas Neue";
+}
+#wrapper {
+  margin: 0 auto;
+  padding: 10px;
+  width: 70%;
+  height: 80vh;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px lightgray;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+#wrapper h1 {
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bolder;
+  grid-column: 1 / span 3;
+  text-align: center;
+  text-shadow: 1px 1px 3px #333;
+}
+#wrapper div {
+  margin: 0 auto;
+  padding: 20px;
+  width: 85%;
+  font-size: 1.7rem;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px #555;
+  text-align: center;
+  color: #333;
+  text-shadow: 1px 1px 1px #fff;
+  font-weight: bolder;
+}
+/* #wrapper div:nth-of-type(1) {
+  padding-bottom: 2rem;
+} */
+#wrapper div:nth-of-type(1),
+#wrapper div:nth-of-type(2),
+#wrapper div:nth-of-type(3) {
+  padding-bottom: 2rem;
+  height: 20%;
+}
+/*  weather */
+#wrapper div:nth-of-type(4) {
+  width: 97%;
+  height: 100%;
+  align-items: center;
+  grid-row: 3 / span 4;
+  padding-top: 15%;
+  line-height: 40px;
+  color: #0f0;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 1px #333;
+}
+#wrapper div:nth-of-type(5) {
+  width: 93%;
+  height: 88%;
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 4;
+  align-items: center;
+  color: #aaa;
+  text-align: left;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#wrapper > .greeting > #login_id > input {
+  padding-left: 10px;
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border-bottom: 1px solid #333;
+}
+#wrapper > .greeting > #login_id > input::placeholder {
+  font-size: 1.3rem;
+  color: #333;
+  font-family: "Cafe24 Ssurround Air";
+  text-shadow: 1px 1px 5px 1px #fff;
+}
+.hidden {
+  display: none;
+}
+
+#wrapper > .quote {
+  width: 92%;
+  height: 20%;
+  font-size: 15px;
+  line-height: 16px;
+  margin: 0 auto;
+  align-items: flex-end;
+  grid-column: 1 / span 2;
+}
+
+#wrapper > .todoList > #addItem > input {
+  padding-left: 10px;
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 1.3rem;
+  color: #aaa;
+  border-bottom: 1px solid #aaa;
+}
+#wrapper > .todoList > #addItem > input::placeholder {
+  font-family: "Cafe24 Ssurround Air";
+  font-size: 1.3rem;
+  color: #aaa;
+}
+#wrapper > .todoList > #unList {
+  margin-top: 10px;
+  line-height: 28px;
+}
+
+#wrapper > .email {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #333;
+  width: 98%;
+  height: 60px;
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
+}
+
+.popup {
+  display: none;
+}
+.emailForm {
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.gform {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.gform > input {
+  padding: 5px;
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  font-family: "Cafe24 Ssurround Air";
+  border: 0;
+}
+
+.gform > textarea {
+  width: 90%;
+  height: 300px;
+  padding: 5px;
+  font-family: "Cafe24 Ssurround Air";
+  border: 0;
+}
+#btn_submit {
+  width: 80px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 150px;
+}
+
+#close {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  bottom: 10px;
+  right: 90px;
+}

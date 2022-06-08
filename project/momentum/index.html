@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+
+    <title>MOMENTUM</title>
+  </head>
+
+  <body>
+    <div id="bg">
+      <div id="wrapper">
+        <h1>재밌는 하루를 시작해보아용! :)</h1>
+
+        <div class="greeting">
+          <p class="hidden"></p>
+          <form id="login_id">
+            <input
+              required
+              maxlength="10"
+              type="text"
+              placeholder="이름을 입력하세요."
+            />
+          </form>
+        </div>
+        <div class="date"></div>
+        <div class="clock">
+          <h2>00 : 00 : 00</h2>
+        </div>
+
+        <div class="weather">
+          <p>
+            Id magna consectetur laboris do consectetur quis excepteur minim.
+          </p>
+        </div>
+        <div class="todoList">
+          <form id="addItem">
+            <input required type="text" placeholder="오늘 할일 적어볼까요." />
+          </form>
+          <ul id="unList"></ul>
+        </div>
+
+        <div class="quote">
+          <span></span>
+          <!-- span태그는 인라인속성-->
+          <span></span>
+        </div>
+        <button class="email">문의하기</button>
+      </div>
+      <div class="popup">
+        <div class="emailForm">
+          <form
+            class="gform"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbzp7nmolGfvz7oe4sSGR6-Tef26cah07fU_JM6ze5sfIj1pJslMEoSwzyGDjMm8I63q/exec"
+          >
+            <h2>Contact Me :)</h2>
+            <input type="text" name="name" placeholder="이름" />
+            <input type="text" name="email" placeholder="온라인편지주소" />
+            <textarea
+              name="message"
+              cols="30"
+              rows="20"
+              placeholder="문의할 사항 입력하세요."
+            ></textarea>
+            <button id="btn_submit" name="submit" type="submit">전송</button>
+          </form>
+          <button id="close">닫기</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/momentum.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todoList.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/promise.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/form-submission-handler.js"></script>
+    <!-- <script src="practice_todo.js"></script> -->
+  </body>
+</html>
