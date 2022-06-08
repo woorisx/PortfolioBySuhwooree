@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: indianred; */
+  height: 700vw;
+}
+
+#logo > img {
+  width: 150px;
+  height: 150px;
+  /* fixed는 무조건 body가 부모임 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 200;
+}
+#gnb {
+  z-index: 100;
+  position: fixed;
+  top: 38%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+#gnb a {
+  margin: 8px;
+  height: 29px;
+  text-decoration: none;
+  border: 0;
+  box-shadow: 0 0 20px 0 rebeccapurple;
+}
+#gnb a.active {
+  box-shadow: 0 0 20px 0 yellow;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  perspective: 1000px;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+.stage {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  transform: translateZ(-700vw);
+}
+
+.wall {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(255, 255, 255, 0.5);    */
+}
+
+.box > div {
+  margin-top: 150px;
+  text-align: center;
+}
+.wall-front-p {
+  transform: translateZ(700vw);
+}
+.wall-front-a {
+  transform: translateZ(500vw);
+}
+
+.wall-front-b {
+  transform: translateZ(300vw);
+}
+.wall-front-c {
+  transform: translateZ(100vw);
+}
+.wall-front-d {
+  transform: translateZ(-100vw);
+}
+.wall-front-e {
+  transform: translateZ(-300vw);
+}
+
+.process-bar-con {
+  width: 100%;
+  height: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rebeccapurple;
+  z-index: 300;
+}
+.process-bar {
+  width: 0%;
+  height: 100%;
+  background-color: orangered;
+}
+.bg {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease-in-out;
+}
