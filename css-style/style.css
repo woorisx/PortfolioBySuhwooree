@@ -339,6 +339,7 @@
 #wrapper > main > #portfolio > .contents > .box > .item {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   opacity: 1;
 }
 #wrapper > main > #portfolio > .contents > .box > .item > img {
