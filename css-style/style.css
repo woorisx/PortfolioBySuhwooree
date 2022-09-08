@@ -19,6 +19,7 @@
 
 a {
   text-decoration: none;
+  color: #333;
 }
 #wrapper > header > .logo {
   width: 30%;
